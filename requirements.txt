@@ -1,0 +1,5 @@
+Keras==2.4.3
+Flask==1.1.2
+Flask_RESTful==0.3.8
+numpy==1.18.5
+tensorflow_gpu==2.3.0
