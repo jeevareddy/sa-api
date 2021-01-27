@@ -48,7 +48,7 @@ def sa_trpp():
     user_query = args['query']
     
     MAX_LENGTH = 255        
-    SPAM_MAX_LENGTH = 190
+    SPAM_MAX_LENGTH = 32
 
     # vectorize the user's query and make a prediction
     #user_query = 'Stuning even for the non-gamer: This sound track was beautiful! It paints the senery in your mind so well I would recomend it even to people who hate vid. game music! I have played the game Chrono Cross but out of all of the games I have ever played it has the best music! It backs away from crude keyboarding and takes a fresher step with grate guitars and soulful orchestras. It would impress anyone who cares to listen!'
