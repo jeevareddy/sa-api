@@ -6,7 +6,7 @@ from keras.models import load_model
 from keras.preprocessing.sequence import pad_sequences
 import re
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 clf_path = 'sentiment_analyser_keras.hdf5'
 model = load_model(clf_path)
@@ -41,7 +41,7 @@ def normalize_texts(texts):
         normalized_texts.append(no_non_ascii)
     return normalized_texts
 
-@app.route('/', methods=['GET'])
+@application.route('/', methods=['GET'])
 def sa_trpp():
     # use parser and find the user's query
     args = parser.parse_args()
@@ -95,4 +95,4 @@ def sa_trpp():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    application.run(debug=False)
