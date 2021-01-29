@@ -2,8 +2,8 @@ from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
 import pickle
 import numpy as np
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from keras.models import load_model
+from keras.preprocessing.sequence import pad_sequences
 import re
 
 app = Flask(__name__)
