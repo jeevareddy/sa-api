@@ -95,4 +95,4 @@ def sa_trpp():
 
 
 if __name__ == '__main__':
-    application.run(debug=False)
+    application.run(debug=True)
