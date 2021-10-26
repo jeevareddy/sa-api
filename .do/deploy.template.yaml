@@ -1,0 +1,11 @@
+spec:
+  name: backend
+  services:
+  - environment_slug: python
+    github:
+      branch: main
+      repo: jeevareddy/sa-api
+      deploy_on_push: false
+    name: sa-api-backend
+    run_command: python3 -m flask run --host=0.0.0.0
+    #run_command: gunicorn --worker-tmp-dir /dev/shm --config gunicorn_config.py main:app
